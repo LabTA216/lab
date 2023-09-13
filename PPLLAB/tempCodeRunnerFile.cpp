@@ -1,0 +1,1 @@
+deletelist(&head,n-3);
