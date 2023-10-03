@@ -1,26 +1,26 @@
 #include<bits/stdc++.h>
 using namespace std;
 
-class ChronologySamajhiye{
+class Chronology{
     string s;
     public:
-    ChronologySamajhiye(string k){
+    Chronology(string k){
         s=k;
         cout<<"\nEntered string "<<k;
     }
-    void ModiSort(){
-        string k=s;
-        sort(k.begin(),k.end());
-        s=k;
+    void cSort(){
+        
+        sort(s.begin(),s.end());
+        
         cout<<"\nSorted string "<<s;
     }
 };
 
 int main()
 {
-
-    ChronologySamajhiye c1("Rahul");
-    c1.ModiSort();  
+    string s="Rahul";
+    Chronology c1(s);
+    c1.cSort();  
 
     return 0;
 }
