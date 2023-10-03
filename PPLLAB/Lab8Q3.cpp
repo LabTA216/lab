@@ -12,17 +12,18 @@ class arrSort{
         getArray();
     }
     void getArray(){
+        int arr[s];
         for (int i = 0; i < s; i++)
         {
-            cin>>*(a+i);
+            cin>>arr[i];
         }
-        for (int i = 0; i < s; i++)
-        {
-           cout<<*(a+i)<<" ";
-        }
+        a=arr;
+        sort(a,a+s);
+        
     }
     void aSort(){
-        sort(a,a+s);
+        
+        
         cout<<"\nSorted array ";
         for (int i = 0; i < s; i++)
         {
