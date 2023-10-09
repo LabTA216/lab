@@ -18,8 +18,11 @@ class arrSort{
             cin>>arr[i];
         }
         a=arr;
+        for (int i = 0; i < s; i++)
         sort(a,a+s);
-        
+        {
+           cout<<*(a+i)<<" ";
+        }
     }
     void aSort(){
         
