@@ -3,52 +3,52 @@
 
 int top=-1;
 
-int * stack;
+int * aStack;
  
-void pop();
-void push(int x);
-void display();
+void aPop();
+void aPush(int x);
+
 
 int main(int argc, char const *argv[])
 {
-    stack = (int *)malloc(sizeof(int));
-    push(3);
-    push(4);
-    push(6);
-    push(9);
+    aStack = (int *)malloc(sizeof(int));
+    aPush(3);
+    aPush(4);
+    aPush(6);
+    aPush(9);
     display();
-    pop();
-    pop();
+    aPop();
+    aPop();
     display();
     return 0;
 }
 
 
-void pop(){
+void aPop(){
     if(top==-1){
-        printf("stack underflow\n");
+        printf("aStack underflow\n");
     }
     else{
-        printf("popped element is %d\n",stack[top]);
+        printf("popped element is %d\n",aStack[top]);
         top--;
     }
 
 }
-void push(int x){
+void aPush(int x){
     top++;
-    *(stack+top)=x;
+    *(aStack+top)=x;
     
 
 }
 void display(){
     if(top==-1){
-        printf("stack is Empty\n");
+        printf("aStack is Empty\n");
     }
     else{
-        printf("stack elements are\n");
+        printf("aStack elements are\n");
         for (int i = top; i >= 0 ; i--)
         {
-            printf("%d ",stack[i]);
+            printf("%d ",aStack[i]);
         }
         printf("\n");
     }
